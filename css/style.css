@@ -1,0 +1,44 @@
+/*  
+    GENERIC 
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  width: 100vw;
+  height: calc(100vh - 100px);
+
+  background-color: black;
+}
+
+/* 
+    HEADER-FOOTER
+*/
+
+.header-footer {
+  width: 100vw;
+  height: 100px;
+
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.interface {
+  width: 300px;
+  display: flex;
+}
+
+/* 
+    UTILITIS
+ */
+
+/* 
+    CLASSI DI DEBUG
+*/
+.debug {
+  border: 2px dashed black;
+}
