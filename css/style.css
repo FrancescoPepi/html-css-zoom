@@ -1,5 +1,9 @@
 /*  
+
+
     GENERIC 
+
+
 */
 * {
   box-sizing: border-box;
@@ -35,26 +39,49 @@ header + * {
 }
 
 /* 
+
+
+    UTILITIS
+
+
+ */
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* 
+
+
     * HEADER
+
+
 */
 
 .size-screen {
   position: absolute;
   top: 15px;
   right: 5px;
+  text-align: center;
 }
 
 .size-screen > a {
-  background-color: #4a4a4a;
+  background-color: #4a4a4abd;
   padding: 5px 8px;
   border-radius: 8px;
-
-  text-decoration: none;
-  color: white;
 }
 
 /* 
+
+
     *MAIN
+
+
 */
 
 .card {
@@ -65,15 +92,23 @@ header + * {
 
 .microphone {
   padding: 5px 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  border-top-right-radius: 5px;
+  background-color: rgb(183 38 38 / 60%);
   color: white;
   position: absolute;
   bottom: 0;
   left: 0;
+  text-align: center;
+  filter: drop-shadow(2px 1px 0.5px #000000);
 }
 
 /* 
+
+
     * FOOTER
+
+
+
 */
 
 .menu-call {
@@ -85,18 +120,44 @@ header + * {
   justify-content: space-between;
   align-items: center;
 }
+.icon > ul > li {
+  font-size: 1.5rem;
+  list-style: none;
+
+  justify-content: center;
+}
+.input *,
+.interface * {
+  padding: 0 0.2rem;
+}
+.input,
 .interface {
-  width: 300px;
-  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.end-call {
+  height: 100%;
+  width: 150px;
+  margin-left: 31px;
+  background-color: #4a4a4a;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.end-call > a {
+  color: red;
+  font-size: 1.5rem;
 }
 
 /* 
-    UTILITIS
- */
 
-/* 
+
     CLASSI DI DEBUG
+
+
 */
+
 .debug {
   border: 2px dashed white;
 }
@@ -131,6 +192,6 @@ header + * {
 }
 
 .debug .card {
-  /* border: 2px dashed white; */
+  border: 2px dashed white;
   background-color: rgba(23, 255, 2, 0.503);
 }
