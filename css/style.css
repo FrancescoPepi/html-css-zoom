@@ -9,16 +9,74 @@
 
 .bg {
   width: 100vw;
-  height: calc(100vh - 100px);
+  height: 100vh;
 
   background-color: black;
 }
+header + * {
+  padding-top: 100px;
+}
+
+.card > img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  width: 1600px;
+  height: calc(100vh - 200px);
+  margin: 0px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  overflow: auto;
+}
 
 /* 
-    HEADER-FOOTER
+    * HEADER
 */
 
-.header-footer {
+.size-screen {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+
+.size-screen > a {
+  background-color: #4a4a4a;
+  padding: 5px 8px;
+  border-radius: 8px;
+
+  text-decoration: none;
+  color: white;
+}
+
+/* 
+    *MAIN
+*/
+
+.card {
+  width: calc(100% / 7 - 10px);
+  position: relative;
+  margin: 5px 5px;
+}
+
+.microphone {
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* 
+    * FOOTER
+*/
+
+.menu-call {
   width: 100vw;
   height: 100px;
 
@@ -40,5 +98,39 @@
     CLASSI DI DEBUG
 */
 .debug {
-  border: 2px dashed black;
+  border: 2px dashed white;
+}
+
+.debug .input {
+  border: 2px dashed white;
+  min-width: 50px;
+  height: 100%;
+  background-color: rgba(0, 255, 255, 0.503);
+}
+.debug .end-call {
+  border: 2px dashed white;
+  min-width: 50px;
+  background-color: rgba(0, 255, 255, 0.503);
+}
+.debug .interface {
+  border: 2px dashed white;
+  min-width: 50px;
+  height: 100%;
+  background-color: rgba(0, 255, 255, 0.503);
+}
+
+.debug .size-screen {
+  border: 2px dashed white;
+  min-width: 50px;
+  background-color: rgba(255, 94, 0, 0.503);
+}
+.debug .full-screen {
+  border: 2px dashed white;
+  min-width: 50px;
+  background-color: rgba(255, 94, 0, 0.503);
+}
+
+.debug .card {
+  /* border: 2px dashed white; */
+  background-color: rgba(23, 255, 2, 0.503);
 }
