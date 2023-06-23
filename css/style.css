@@ -12,7 +12,7 @@
 }
 
 .bg {
-  width: 100vw;
+  min-width: 100vw;
   height: 100vh;
 
   background-color: rgb(20, 20, 20);
@@ -70,7 +70,7 @@ a {
 .size-screen > a {
   background-color: #4a4a4abd;
   padding: 5px 8px;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 /* 
@@ -124,7 +124,7 @@ a {
 */
 
 .menu-call {
-  width: 100vw;
+  min-width: 100vw;
   height: 100px;
 
   background-color: #312f2f;
@@ -133,7 +133,7 @@ a {
   align-items: center;
 }
 .icon > ul > li {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   list-style: none;
 
   justify-content: center;
@@ -150,8 +150,7 @@ a {
 
 .end-call {
   height: 100%;
-  width: 150px;
-  margin-left: 31px;
+  min-width: 150px;
   background-color: #4a4a4a;
   justify-content: center;
   align-items: center;
@@ -160,7 +159,7 @@ a {
 }
 .end-call > a {
   color: red;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 .end-call:hover a {
