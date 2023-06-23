@@ -15,7 +15,7 @@
   width: 100vw;
   height: 100vh;
 
-  background-color: black;
+  background-color: rgb(20, 20, 20);
 }
 header + * {
   padding-top: 100px;
@@ -32,6 +32,7 @@ header + * {
   margin: 0px auto;
 
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
 
@@ -85,9 +86,10 @@ a {
 */
 
 .card {
-  width: calc(100% / 7 - 10px);
+  width: calc(100% / 7 - 20px);
   position: relative;
-  margin: 5px 5px;
+  margin: 5px 10px;
+  filter: drop-shadow(4px 4px 0px #8009095e);
 }
 
 .microphone {
@@ -100,6 +102,20 @@ a {
   left: 0;
   text-align: center;
   filter: drop-shadow(2px 1px 0.5px #000000);
+}
+.microphone-verde {
+  padding: 5px 10px;
+  border-top-right-radius: 5px;
+  background-color: rgba(41, 172, 8, 0.6);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  filter: drop-shadow(2px 1px 0.5px #000000);
+}
+.card.card-verde {
+  filter: drop-shadow(4px 4px 0px #0272274b);
 }
 
 /* 
@@ -115,7 +131,7 @@ a {
   width: 100vw;
   height: 100px;
 
-  background-color: #222222;
+  background-color: #312f2f;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -144,10 +160,15 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  filter: drop-shadow(-5px 0px 3px #0000004b);
 }
 .end-call > a {
   color: red;
   font-size: 1.5rem;
+}
+
+.end-call:hover a {
+  transform: scale(1.2);
 }
 
 /* 
@@ -194,4 +215,8 @@ a {
 .debug .card {
   border: 2px dashed white;
   background-color: rgba(23, 255, 2, 0.503);
+}
+
+i:hover {
+  transform: scale(1.2);
 }
