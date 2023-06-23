@@ -17,9 +17,6 @@
 
   background-color: rgb(20, 20, 20);
 }
-header + * {
-  padding-top: 100px;
-}
 
 .card > img {
   width: 100%;
@@ -27,7 +24,7 @@ header + * {
 }
 
 .container {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 220px);
   gap: 20px;
   display: flex;
   justify-content: center;
@@ -63,10 +60,11 @@ a {
 */
 
 .size-screen {
-  position: absolute;
-  top: 15px;
-  right: 5px;
-  text-align: center;
+  width: 100vw;
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 15px;
+  text-align: right;
 }
 
 .size-screen > a {
