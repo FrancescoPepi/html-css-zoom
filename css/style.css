@@ -27,10 +27,8 @@ header + * {
 }
 
 .container {
-  width: 1600px;
   height: calc(100vh - 200px);
-  margin: 0px auto;
-
+  gap: 20px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -86,9 +84,9 @@ a {
 */
 
 .card {
-  width: calc(100% / 7 - 20px);
+  /* width: calc(100% / 7 - 20px); */
   position: relative;
-  margin: 5px 10px;
+  /* margin: 5px 10px; */
   filter: drop-shadow(4px 4px 0px #8009095e);
 }
 
